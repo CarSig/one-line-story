@@ -1,0 +1,10 @@
+@mixin contrast-colors($color) {
+  background-color: $color;
+  color: if(lightness($color) > 50, #111, #fff);
+}
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}

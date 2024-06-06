@@ -1,0 +1,116 @@
+@import "variables";
+@import "mixins";
+@import "components";
+@import "modal";
+@import "story";
+@import "user";
+:root {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 500;
+  color: $primary1;
+  text-decoration: none;
+  :hover {
+    color: $primary7;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  color: $primary8;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.1;
+  color: $primary8;
+  text-align: center;
+}
+
+button {
+  @include contrast-colors($primary3);
+
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  &:hover {
+    border-color: $primary7;
+    background-color: $primary4;
+  }
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto $primary6;
+  }
+}
+
+header {
+  @include contrast-colors($primary9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 3em;
+  box-sizing: border-box;
+  max-width: 100%;
+
+  div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      width: 4em;
+      height: 4rem;
+    }
+  }
+}
+
+input {
+  @include contrast-colors($primary1);
+  border-radius: 8px;
+  border: 1px solid $primary3;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  transition: border-color 0.25s;
+  width: 50%;
+  &:focus {
+    border-color: $primary6;
+  }
+}
+
+input[type="radio"] {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  label {
+    font-size: 1.1em;
+    line-height: 1.1;
+    color: $primary8;
+    text-align: center;
+  }
+}

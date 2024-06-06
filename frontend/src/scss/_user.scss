@@ -1,0 +1,47 @@
+.user-login-container {
+  display: flex;
+  gap: 3rem;
+
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 15%;
+
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: $primary1;
+  transition: all 0.5s;
+  position: relative;
+
+  :hover {
+    border-color: $primary9;
+    background-color: $primary3;
+  }
+}
+
+.user-login {
+  border: 2px solid $primary8;
+
+  cursor: pointer;
+  h2 {
+    font-size: 1.5em;
+    line-height: 1.1;
+    color: $primary8;
+    text-align: center;
+    &:hover {
+      background-color: $primary5;
+    }
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    &:hover {
+      background-color: $primary5;
+    }
+  }
+  &:hover {
+    border-color: $primary9;
+    background-color: $primary5;
+  }
+}

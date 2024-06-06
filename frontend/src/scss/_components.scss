@@ -1,0 +1,42 @@
+.main-container {
+  display: flex;
+  padding: 0 5%;
+  // margin: 5% 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $primary1;
+  color: $primary9;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid $primary3;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.instructions-title {
+  font-size: 1.5em;
+  line-height: 1.1;
+  color: $primary8;
+  text-align: center;
+}
+
+.instructions-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
