@@ -5,6 +5,8 @@ const storySchema = new Schema(
     title: {
       type: String,
       required: true,
+      maxLenght: 30,
+      minLenght: 5,
     },
     topic: {
       type: String,
@@ -13,6 +15,8 @@ const storySchema = new Schema(
     maxSentences: {
       type: Number,
       required: true,
+      min: 3,
+      max: 30,
     },
     sentences: {
       type: [String],

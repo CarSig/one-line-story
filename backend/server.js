@@ -6,9 +6,9 @@ const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const MONGO_URI = process.env.MONGODB_URI;
-const PORT = process.env.PORT || 3001;
-const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:3000";
+const MONGO_URI = process.env.MONGODB_URI || "mongodb+srv://lovro:q9lrXhOwwNS4311b@cluster0.vqvx80s.mongodb.net/";
+const PORT = 4444;
+const CLIENT_URL = "http://localhost:3001";
 
 const server = http.createServer(app);
 const io = new Server(server, {
