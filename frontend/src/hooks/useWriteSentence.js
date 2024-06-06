@@ -34,7 +34,7 @@ const useWriteSentence = (socket, storyId, user, story) => {
     });
 
     socket.on("disconnect", () => {
-      console.log("Disconnected from server");
+      console.log("Disconnected from server!");
     });
 
     return () => {
