@@ -1,12 +1,12 @@
 # Install
 
-frontend/ npm i
-backend/ npm i
+- frontend/ npm i
+- backend/ npm i
 
 # run
 
-frontend: npm run dev
-backend: node server.js
+- frontend: npm run dev
+- backend: node server.js
 
 # User Story 1: As a player, I want to create a new story
 
